@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: #f3f3f3;
+  color: #333;
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: linear-gradient(45deg, #2b5876, #4e4376);
+  color: white;
+  width: 350px;
+  padding-top: 50px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, #2b5876, #4e4376);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(45deg, #5a3f8c, #874da6);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.nav-button:focus {
+  outline: none;
+  background: linear-gradient(45deg, #874da6, #b064d4);
+}
+
+/* Main Content Styling */
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+}
+
+/* Welcome Container (Initial Screen) */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.welcome-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4e4376;
+  margin-bottom: 30px;
+}
+
+.welcome-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .welcome-container h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
